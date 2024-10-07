@@ -18,8 +18,9 @@ public class GenericsTest {
         for (Triple<String, Integer, Integer> triple : arrayTeams) {
             // grab info from triple and place into pair
                 // grab team name
-                // grab wins and loss integers then place into winPercentage
-                    // place
+                // grab wins and loss integers
+                    // calculate divide wins by total games
+                    // place calculation into winPercentage
         }
 
      }
