@@ -31,6 +31,16 @@ public class GenericsTest {
                     // calculate divide wins by total games
                     // place calculation into winPercentage
         }
+        double highestWinPercentage = 0;
+        String bestTeam = "";
 
+        for (int i = 0; i < pairTeams.length; i++) {
+            double oWinPercent = pairTeams[i].getSecond();
+            if (oWinPercent > highestWinPercentage) {
+                highestWinPercentage = oWinPercent;
+                bestTeam = pairTeams[i].getFirst();
+            }
+        }
+        System.out.println("The team with the highest win percentage is " + bestTeam + " with " + highestWinPercentage + "%");
      }
 }
