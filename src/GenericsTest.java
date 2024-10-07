@@ -15,10 +15,18 @@ public class GenericsTest {
 
         Pair<String, Double>[] pairTeams = new Pair[5];
 
-        for (Triple<String, Integer, Integer> triple : arrayTeams) {
+        for (int i = 0; i < arrayTeams.length; i++) {
             // grab info from triple and place into pair
                 // grab team name
+            String name = arrayTeams[i].getFirst();
+            pairTeams[i] = new Pair<>(name, (double) i);
+//            System.out.println(name + " : " + pairTeams[i].getFirst());
                 // grab wins and loss integers
+            int numWins = arrayTeams[i].getSecond();
+            int totalGames = numWins + arrayTeams[i].getThird();
+            double percentWins = (double) numWins / totalGames;
+            System.out.println(percentWins);
+
                     // calculate divide wins by total games
                     // place calculation into winPercentage
         }
