@@ -3,10 +3,10 @@ public class Triple<A, B, C> {
     private B second;
     private C third;
 
-    public Triple(A a, B b, C c) {
-        first = a;
-        second = b;
-        third = c;
+    public Triple(A teamName, B win, C loss) {
+        first = teamName;
+        second = win;
+        third = loss;
     }
 
     public A getFirst() {

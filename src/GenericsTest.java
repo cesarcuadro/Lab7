@@ -16,7 +16,10 @@ public class GenericsTest {
         Pair<String, Double>[] pairTeams = new Pair[5];
 
         for (Triple<String, Integer, Integer> triple : arrayTeams) {
-
+            // grab info from triple and place into pair
+                // grab team name
+                // grab wins and loss integers then place into winPercentage
+                    // place
         }
 
      }
