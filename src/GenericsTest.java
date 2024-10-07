@@ -6,6 +6,13 @@ public class GenericsTest {
         Triple<String, Integer, Integer> tripleFour = new Triple<>("Padres", 6, 5);
         Triple<String, Integer, Integer> tripleFive = new Triple<>("Bears", 4, 8);
 
+        Triple<String, Integer, Integer>[] arrayTeams = new Triple[5];
+        arrayTeams[0] = tripleOne;
+        arrayTeams[1] = tripleTwo;
+        arrayTeams[2] = tripleThree;
+        arrayTeams[3] = tripleFour;
+        arrayTeams[4] = tripleFive;
+
 
 
      }
