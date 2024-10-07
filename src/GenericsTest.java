@@ -13,7 +13,11 @@ public class GenericsTest {
         arrayTeams[3] = tripleFour;
         arrayTeams[4] = tripleFive;
 
+        Pair<String, Double>[] pairTeams = new Pair[5];
 
+        for (Triple<String, Integer, Integer> triple : arrayTeams) {
+
+        }
 
      }
 }
